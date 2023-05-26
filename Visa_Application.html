@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visa Application Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form>
+    <h2>Visa Application Form</h2>
+    <label for="visa-type">Visa Type:</label>
+    <select id="visa-type" name="visa-type" required>
+      <option value="">Select Visa Type</option>
+      <option value="tourist">Tourist Visa</option>
+      <option value="student">Student Visa</option>
+      <option value="work">Work Visa</option>
+      <!-- Add more options as needed -->
+    </select>
+
+    <h3>Personal Information</h3>
+    <label for="full-name">Full Name:</label>
+    <input type="text" id="full-name" name="full-name" required>
+    <label for="passport-number">Passport Number:</label>
+    <input type="text" id="passport-number" name="passport-number" required>
+
+    <!-- Include more fields for personal information such as date of birth, nationality, etc. -->
+
+    <h3>Supporting Documents</h3>
+    <label for="passport-photograph">Passport Photograph:</label>
+    <input type="file" id="passport-photograph" name="passport-photograph" accept="image/*" required>
+    <label for="travel-itinerary">Travel Itinerary:</label>
+    <input type="file" id="travel-itinerary" name="travel-itinerary" accept=".pdf" required>
+    <!-- Include additional file upload fields for other supporting documents -->
+
+    <h3>Appointment</h3>
+    <label for="appointment-date">Preferred Appointment Date:</label>
+    <input type="date" id="appointment-date" name="appointment-date" required>
+    <label for="appointment-time">Preferred Appointment Time:</label>
+    <input type="time" id="appointment-time" name="appointment-time" required>
+
+    <!-- Include more fields for appointment details -->
+
+    <h3>Payment</h3>
+    <label for="visa-fee">Visa Fee:</label>
+    <input type="text" id="visa-fee" name="visa-fee" required>
+    <label for="payment-method">Payment Method:</label>
+    <input type="text" id="payment-method" name="payment-method" required>
+
+    <!-- Include more fields for payment details -->
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
