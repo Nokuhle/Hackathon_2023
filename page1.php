@@ -1,3 +1,9 @@
+<?php
+
+require("SignupDetails.php");
+
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,7 +15,7 @@
     <title>Sign Up Page</title>
 </head>
 <body>
-    <form action="UserDetails.php" method="POST">
+    <form action="SignupDetails.php" method="POST">
         <img src=" ">
         <span>
         <h2>Sign Up</h2>

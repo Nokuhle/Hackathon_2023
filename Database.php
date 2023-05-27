@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 // Database connection details
 $servername = "localhost";    
 $username = "root";  
@@ -7,19 +7,19 @@ $password = "";
 // Create a connection
 $conn = new mysqli($servername, $username, $password);
 
-// Check connection
+// // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
 // // Create a new database
 $databaseName = "HACK2023";  
-$sql = "CREATE DATABASE $databaseName";
-if ($conn->query($sql) === TRUE) {
-    echo "Database created successfully";
-} else {
-    echo "Error creating database: " . $conn->error;
-}
+// $sql = "CREATE DATABASE $databaseName";
+// if ($conn->query($sql) === TRUE) {
+//     echo "Database created successfully";
+// } else {
+//     echo "Error creating database: " . $conn->error;
+// }
 
 // Select the database
 $conn->select_db($databaseName);
@@ -39,4 +39,4 @@ $conn->select_db($databaseName);
 //     echo "Error creating table: " . $conn->error;
 // }
 
-?> -->
+?>
