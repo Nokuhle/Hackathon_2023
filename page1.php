@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,14 +9,14 @@
     <title>Sign Up Page</title>
 </head>
 <body>
-    <form>
+    <form action="UserDetails.php" method="POST">
         <img src=" ">
         <span>
         <h2>Sign Up</h2>
         <br>
         <label for="studentnumber">Student Number</label>
         <br>
-        <input id="name" type="text" name="name" title="Please enter your student number" required maxlength="9">
+        <input id="number" type="text" name="studentnumber" title="Please enter your student number" required maxlength="9">
         <br>
         <label for="email">Email</label>
         <br>
@@ -27,13 +28,15 @@
         <br>
         <label for="conpassword">Confirm Password</label>
         <br>
-        <input id="password" type="password" name="password">
+        <input id="confirmpassword" type="password" name="confirmpassword">
         <br>
         <input id="button" type="submit" value="Submit">
         <br>
         
         <a href="Login.html">LOG IN</a>
       </form>
+
+
       
 </body>
 </html>
