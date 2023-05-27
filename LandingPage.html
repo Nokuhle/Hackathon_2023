@@ -5,116 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hack Star</title>
-    <style>
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
+    <link rel="stylesheet" href="LandingPage.css">
 
-body {
-  background: #272727;
-  font-family: "Montserrat", sans-serif;
-  color: #ffffff;
-}
-
-.navMenu {
-  position: absolute;
-  top: 5%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.name{
-    position: absolute;
-    top: 2%;
-    left: 2%;
-}
-
-.navMenu a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 1.2em;
-  text-transform: uppercase;
-  font-weight: 500;
-  display: inline-block;
-  width: 80px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.navMenu a:hover {
-  color: #fddb3a;
-}
-
-.navMenu .dot {
-  width: 6px;
-  height: 6px;
-  background: #fddb3a;
-  border-radius: 50%;
-  opacity: 0;
-  -webkit-transform: translateX(30px);
-  transform: translateX(30px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.navMenu a:nth-child(1):hover ~ .dot {
-  -webkit-transform: translateX(30px);
-  transform: translateX(30px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
-
-.navMenu a:nth-child(2):hover ~ .dot {
-  -webkit-transform: translateX(110px);
-  transform: translateX(110px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
-
-.navMenu a:nth-child(3):hover ~ .dot {
-  -webkit-transform: translateX(200px);
-  transform: translateX(200px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
-
-.navMenu a:nth-child(4):hover ~ .dot {
-  -webkit-transform: translateX(285px);
-  transform: translateX(285px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
-
-
-    </style>
 </head>
 <body>
-    <div>
-        <nav class="navMenu">
-          <a href="LandingPage.html">Home</a>
-          <a href="#">Apply</a>
-          <a href="#">Visa</a>
-          <a href="#">About</a>
-          <div class="dot"></div>
-        </nav>
-    </div>
+    <header>
+        <div class="navbar">   
+            <div class="name" > <p>Star Track</p> </div>
+                <nav class="navMenu">
+                    <a href="#">Apply</a>
+                    <a href="#">Visa</a>
+                    <a href="LandingPage.html">Home</a>
+                </nav>
+        </div>
+    </header>
 
-    <div class="name"><h3>Star Track</h3></div>
+   
 
     <section class="Apply">
         <div>
             <h2>Apply For PDRF</h2>
             <div class="wpb_column vc_column_container vc_col-sm-4">
-                <div class="vc_column-inner"><div class="wpb_wrapper">
+                <div class="vc_column-inner">
+                    <div class="wpb_wrapper">
                     <div class="wpb_text_column wpb_content_element ">
                         <div class="wpb_wrapper">
                             <div class="card text-dark bg-light mb-3" style="max-width: 100%;">
@@ -128,9 +41,68 @@ body {
             </div>
             </div>
         </div>
+
+
+        <div>
+            <div class="wpb_column vc_column_container vc_col-sm-4">
+                <div class="vc_column-inner"><div class="wpb_wrapper">
+                    <div class="wpb_text_column wpb_content_element ">
+                        <div class="wpb_wrapper">
+                            <div class="card text-dark bg-light mb-3" style="max-width: 100%;">
+                                <div class="card-body"><h5 class="card-title" style="text-align: center;">Returning Applicate</h5><p style="text-align: center; color: white;">
+                                    <a class="btn" style="background-color: #f26522; color: white; width: 65%;" href="https://registration.uj.ac.za/pls/prodi41/gen.gw1pkg.gw1startup?x_processcode=ITS_OAP">Apply Here</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
     </section>
 
+    <main>
+        <div class="content-wrapper" id="about">
+             <!-- second replaceable image -->
+             <div class="grid">
+               <div class="buttons-container">
+                 <div class="section">
+                   <div class="button-wrapper">
+                     <button class="button">Button 1</button>
+                   </div>
+                   <div class="button-wrapper">
+                     <button class="button">Button 2</button>
+                   </div>
+                   <div class="button-wrapper">
+                     <button class="button">Button 3</button>
+                   </div>
+                 </div>
 
+         
+                 <div class="section">
+                   <div class="button-wrapper">
+                     <button class="button">Button 4</button>
+                   </div>
+                   <div class="button-wrapper">
+                     <button class="button">Button 5</button>
+                   </div>
+                   <div class="button-wrapper">
+                     <button class="button">Button 6</button>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+           
+        <!-- <div id="reserve" class="content-wrapper-lg text-center astonish" data-animation="zoomIn">
+             <h2 class="section-title">Visa Expired</h2>
+             <p>We Got You</p>
+             <a href="/Visa_Application.html" class="btn btn-outline-purple">Apply</a>
+        </div> -->
+
+        <!-- This is an embedded Google map, this is easily customizable especially if you get a Google API key, this will allow for more customizable features. -->
+       
+   </main>
 
 
 
