@@ -4,7 +4,7 @@ require("Database.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $StudentNumber = $_POST['studentnumber'];
-         $password = $_POST['password'];
+         $password = $_POST['login_password'];
     $sql = "SELECT * FROM userdetails WHERE studentNumber = '$StudentNumber'";
     $result = $conn->query($sql);
 
