@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="form.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <form>
+      <h2 class="BI">Biographical Information</h2>
+      <label for="title">Title:</label>
+      <select id="title" name="title" required>
+        <option value="mrs">Mrs</option>
+        <option value="mr">Mr</option>
+        <option value="miss">Miss</option>
+        <option value="ms">Ms</option>
+        <option value="dr">Dr</option>
+      </select>
+      <label for="surname">Surname:</label>
+      <input type="text" id="surname" name="surname" required>
+      <label for="initials">Initials:</label>
+      <input type="text" id="initials" name="initials" required>
+      <label for="first-name">First name:</label>
+      <input type="text" id="first-name" name="first-name" required>
+      <br>
+      <label for="citizenship">Citizenship:</label>
+      <input type="text" id="citizenship" name="citizenship" required>
+      <br>
+      <label for="id-type">ID type:</label>
+      <input type="text" id="id-type" name="id-type" required>
+      <br>
+      <label for="id-number">ID/Passport/Unique Number:</label>
+      <input type="text" id="id-number" name="id-number" required>
+      <br>
+      <label for="orcid">ORCID Identification Number:</label>
+      <input type="text" id="orcid" name="orcid">
+      <br>
+      <label for="race">Race:</label>
+      <input type="text" id="race" name="race" required>
+      <br>
+      <label for="gender">Gender:</label>
+      <input type="text" id="gender" name="gender" required>
+      <br>
+      <label for="ref-no">Ref.No. (For office use only):</label>
+      <input type="text" id="ref-no" name="ref-no">
+  
+      <label for="dob">Date Of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+  
+      <h2>PhD Information</h2>
+      <label for="phd-date">PhD obtained (DD.MM.YY):</label>
+      <input type="text" id="phd-date" name="phd-date" required>
+      <label for="phd-institution">PhD obtained (Institution):</label>
+      <input type="text" id="phd-institution" name="phd-institution" required>
+      <label for="home-language">Home Language:</label>
+      <input type="text" id="home-language" name="home-language" required>
+  
+      <h2>Contact Details</h2>
+      <label for="next-of-kin-name">Next of Kin – Name:</label>
+      <input type="text" id="next-of-kin-name" name="next-of-kin-name" required>
+      <label for="next-of-kin-contact">Next of Kin – Contact Number:</label>
+      <input type="text" id="next-of-kin-contact" name="next-of-kin-contact" required>
+  
+      <!-- Remaining form fields omitted for brevity -->
+  
+      <h2>Disability</h2>
+      <label for="disability">Do you have a disability?</label>
+      <input type="checkbox" id="disability" name="disability">
+      <label for="disability">Yes</label>
+      <br>
+      <label for="disability-explanation">If yes, please explain:</label>
+      <textarea id="disability-explanation" name="disability-explanation"></textarea>
+      
+      <h2>Contact Details</h2>
+      <label for="postdoc-fellow">Are you currently a Postdoctoral Fellow?</label>
+      <input type="radio" id="postdoc-yes" name="postdoc" value="yes">
+      <label for="postdoc-yes">Yes</label>
+      <input type="radio" id="postdoc-no" name="postdoc" value="no">
+      <label for="postdoc-no">No</label>
+      <br>
+      <label for="department">Department/School/Institute:</label>
+      <input type="text" id="department" name="department">
+      <br>
+      <label for="faculty">Faculty:</label>
+      <input type="text" id="faculty" name="faculty">
+      <br>
+      <label for="address">Physical/Postal Address in South Africa:</label>
+      <input type="text" id="address" name="address">
+      <br>
+      <label for="city">City/Town:</label>
+      <input type="text" id="city" name="city">
+      <br>
+      <label for="code">Code:</label>
+      <input type="text" id="code" name="code">
+      <br>
+      <label for="telephone">Primary Telephone No.:</label>
+      <input type="tel" id="telephone" name="telephone">
+      <br>
+      <label for="fax">Fax Number:</label>
+      <input type="tel" id="fax" name="fax">
+      <br>
+      <label for="mobile">Mobile Number:</label>
+      <input type="tel" id="mobile" name="mobile">
+      <br>
+      <label for="email">Primary Email Address:</label>
+      <input type="email" id="email" name="email">
+      <br>
+      <label for="alternate-email">Alternate Email Address:</label>
+      <input type="email" id="alternate-email" name="alternate-email">
+      <br>
+      <label for="web-address">Web Address:</label>
+      <input type="url" id="web-address" name="web-address">
+      <br>
+      <label for="country">Country:</label>
+      <input type="text" id="country" name="country">
+      <br>
+      <label for="province">Province/State:</label>
+      <input type="text" id="province" name="province">
+      <br>
+
+      <h2>Consent and Declaration</h2>
+      <p></p>
+        <label for="consent">I declare that all the information contained in this application form is true and correct and I understand that in the event of any untrue or false information, any fellowship award granted to me might be cancelled.</label>
+      </p>
+      <br>
+      <br>
+      <p>
+        <label for="eligibility">I have read and I am familiar with the eligibility requirements as indicated above.</label>
+      </p>
+      <br>
+      <br>
+      <p>
+        <label for="grant-result">I understand that an application will not automatically result in the grant of a Postdoctoral Research Fellowship at UJ.</label>
+      </p>
+      <br>
+      <br>
+      <p>
+        
+        <label for="data-access">I grant permission to UJ to have access to information pertaining to my biographical information and academic achievement.</label>
+        <input type="checkbox" id="ConsentandDeclaration" name="ConsentandDeclaration" required>
+      </p>
+      <p>
+        Signed on the day of 2023 at
+        <input type="text" id="signed-date" name="signed-date" required>
+       
+      </p>
+      <p>
+        Applicant’s Signature:
+        <input type="text" id="applicant-signature" name="applicant-signature" required>
+        Witness’ Signature:
+        <input type="text" id="witness-signature" name="witness-signature" required>
+      </p>
+  
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
