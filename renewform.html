@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="renew.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div >
+        <h1>SPDRF Renewal Application</h1>
+  
+        <form action="submit_application.php" method="POST">
+          <h2>1. Renewal Process</h2>
+          <p>The agreement may be renewed if the host, HoD, and Dean are satisfied with the SPDRF's performance.</p>
+          <p>Renewal Type:</p>
+          <input type="radio" id="first_appointment" name="renewal_type" value="First appointment of Senior Postdoctoral Fellowship">
+          <label for="first_appointment">First appointment of Senior Postdoctoral Fellowship</label><br>
+          <input type="radio" id="first_renewal" name="renewal_type" value="First renewal of Senior Postdoctoral Fellowship">
+          <label for="first_renewal">First renewal of Senior Postdoctoral Fellowship</label><br>
+          <input type="radio" id="second_renewal" name="renewal_type" value="Second renewal of Senior Postdoctoral Fellowship">
+          <label for="second_renewal">Second renewal of Senior Postdoctoral Fellowship</label><br>
+          
+          <h2>2. Project Summary</h2>
+          <label for="descriptive_title">Descriptive Project Title:</label>
+          <input type="text" id="descriptive_title" name="descriptive_title"><br>
+          <label for="work_plan">Work Plan of the Project:</label>
+          <textarea id="work_plan" name="work_plan"></textarea><br>
+          <label for="discipline">Discipline:</label>
+          <input type="text" id="discipline" name="discipline"><br>
+          <label for="host">Host:</label>
+          <input type="text" id="host" name="host"><br>
+          <label for="co_host">Co-Host:</label>
+          <input type="text" id="co_host" name="co_host"><br>
+          <label for="project_duration">Project Duration:</label>
+          <input type="text" id="project_duration" name="project_duration"><br>
+          
+          <h2>3. Details of Research</h2>
+          <label for="progress_report">Progress Report:</label>
+          <textarea id="progress_report" name="progress_report"></textarea><br>
+          
+          <h2>4. Research Outputs</h2>
+          
+          <h3>4.1 Publications</h3>
+          <br>
+          <p>Please provide details of publications:</p>
+          <label for="author1">Name of first author:</label>
+          <input type="text" id="author1" name="author1">
+        
+          <label for="co_author1">Name of co-author(s):</label>
+          <input type="text" id="co_author1" name="co_author1">
+        
+          <label for="publication_title1">Title of publication:</label>
+          <input type="text" id="publication_title1" name="publication_title1">
+        
+          <label for="date_submitted1">Date submitted:</label>
+          <input type="text" id="date_submitted1" name="date_submitted1">
+        
+          <label for="publication_type1">Type of publication:</label>
+          <input type="text" id="publication_type1" name="publication_type1">
+        
+          <label for="publication_status1">Status:</label>
+          <input type="text" id="publication_status1" name="publication_status1">
+        
+          <label for="conference_journal1">Name of Book, Conference, Journal:</label>
+          <input type="text" id="conference_journal1" name="conference_journal1">
+          
+          
+          <h3>4.2 Patents</h3>
+          <p>Please provide details of patents:</p>
+             <label for="inventor1">Name of Inventor:</label>
+            <input type="text" id="inventor1" name="inventor1">
+
+            <label for="patent_title1">Title of Patent:</label>
+            <input type="text" id="patent_title1" name="patent_title1">
+
+            <label for="patent_description1">Description of Patent:</label>
+            <input type="text" id="patent_description1" name="patent_description1">
+
+            <label for="application_date1">Patent application date:</label>
+            <input type="text" id="application_date1" name="application_date1">
+
+            <label for="granting_date1">Patent granting date:</label>
+            <input type="text" id="granting_date1" name="granting_date1">
+
+            <label for="local_number1">Local Application/Registration Number:</label>
+            <input type="text" id="local_number1" name="local_number1">
+
+            <!-- Repeat the above fields as necessary for each patent -->
+
+            <label for="international_number1">International Application/Registration Number:</label>
+            <input type="text" id="international_number1" name="international_number1">
+
+            <label for="submitted_countries1">Countries where submitted:</label>
+            <input type="text" id="submitted_countries1" name="submitted_countries1">
+
+            <label for="accepted_countries1">Countries where accepted:</label>
+            <input type="text" id="accepted_countries1" name="accepted_countries1">
+                <br>
+    
+                <h3>4.3 Products/Artefacts</h3>
+            <label for="product_name1">Name (title, initials, surname):</label>
+            <input type="text" id="product_name1" name="product_name1">
+          
+            <label for="product_description1">Description of Product/Artefact:</label>
+            <textarea id="product_description1" name="product_description1"></textarea>
+          
+            <label for="product_impact1">Impact of Product/Artefact:</label>
+            <input type="text" id="product_impact1" name="product_impact1">
+          
+            <label for="product_date1">Date of Production (month & year):</label>
+            <input type="date" id="product_date1" name="product_date1">
+          
+            <!-- Repeat the above fields as necessary for each product/artefact -->
+          
+              <h3>4.4 Other Related Outputs</h3>
+              <textarea id="other_outputs" name="other_outputs"></textarea>
+          
+              <h3>4.5 Links with and impact on Industry/Community</h3>
+              <p>Report on any links with industry/community:</p>
+              <textarea id="industry_links" name="industry_links"></textarea>
+          
+              <h3>4.6 Any other outputs resulting from the research</h3>
+              <textarea id="research_outputs" name="research_outputs"></textarea>
+          
+            
+              <h2>4.7 Science Awareness Activities</h2>
+              <p>List all activities, including workshops, conferences, and seminars organized in relation to this project:</p>
+          
+              <label for="activity_nature1">Nature of Activity:</label>
+              <input type="text" id="activity_nature1" name="activity_nature1">
+            
+              <label for="workshop_title1">Title of workshop/seminar:</label>
+              <input type="text" id="workshop_title1" name="workshop_title1">
+            
+              <label for="target_group1">Target group:</label>
+              <input type="text" id="target_group1" name="target_group1">
+            
+              <label for="impact_outputs1">Impact and outputs:</label>
+              <input type="text" id="impact_outputs1" name="impact_outputs1">
+    
+              <h2>4.8 Conferences/Workshops</h2>
+              <p>List the conferences/workshops attended and institutions visited:</p>
+              <label for="conference_institution1">Conference attended/Institution visited:</label>
+              <input type="text" id="conference_institution1" name="conference_institution1">
+            
+              <label for="city_country1">City and country:</label>
+              <input type="text" id="city_country1" name="city_country1">
+            
+              <label for="year_attended1">Year attended:</label>
+              <input type="text" id="year_attended1" name="year_attended1">
+            
+              <label for="contribution_made1">Contribution made:</label>
+              <input type="text" id="contribution_made1" name="contribution_made1">
+            
+              <label for="attendance_impact1">Impact of attendance:</label>
+              <input type="text" id="attendance_impact1" name="attendance_impact1">
+            
+              <!-- Repeat the above fields as necessary -->
+            
+              <br>
+            
+              <label for="conference_institution2">Conference attended/Institution visited:</label>
+              <input type="text" id="conference_institution2" name="conference_institution2">
+            
+              <label for="city_country2">City and country:</label>
+              <input type="text" id="city_country2" name="city_country2">
+            
+              <label for="year_attended2">Year attended:</label>
+              <input type="text" id="year_attended2" name="year_attended2">
+            
+              <label for="contribution_made2">Contribution made:</label>
+              <input type="text" id="contribution_made2" name="contribution_made2">
+            
+              <label for="attendance_impact2">Impact of attendance:</label>
+              <input type="text" id="attendance_impact2" name="attendance_impact2">
+            
+              <!-- Repeat the above fields as necessary -->
+            
+              <br>
+            
+              <label for="conference_institution3">Conference attended/Institution visited:</label>
+              <input type="text" id="conference_institution3" name="conference_institution3">
+            
+              <label for="city_country3">City and country:</label>
+              <input type="text" id="city_country3" name="city_country3">
+            
+              <label for="year_attended3">Year attended:</label>
+              <input type="text" id="year_attended3" name="year_attended3">
+            
+              <label for="contribution_made3">Contribution made:</label>
+              <input type="text" id="contribution_made3" name="contribution_made3">
+            
+              <label for="attendance_impact3">Impact of attendance:</label>
+              <input type="text" id="attendance_impact3" name="attendance_impact3">
+    
+              <h2>5. Publications</h2>
+              <p>Has the SPDRF produced any publications since the inception of the fellowship?</p>
+              <h2>5. Publications</h2>
+              <p>Do you have publications?</p>
+              <label for="publications">Yes</label>
+              <input type="checkbox" id="publications" name="publications">
+            
+              <h2>6. Work Plan</h2>
+              <p>Do you have a work plan?</p>
+              <label for="work_plan">Yes</label>
+              <input type="checkbox" id="work_plan" name="work_plan">
+            
+              <h2>7. Deadlines</h2>
+              <p>Does the SPDRF meet the deadlines as specified on the work plan?</p>
+              <label for="deadlines">Yes</label>
+              <input type="checkbox" id="deadlines" name="deadlines">
+          
+              <h2>8. Expected Completion Date</h2>
+              <p>Expected date to complete the senior postdoctoral research project:</p>
+              <input type="date" name="completion_date"
+
+              <button type="submit"></button>
+
+    </div>
+
+</body>
+</html>
