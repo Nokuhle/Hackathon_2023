@@ -5,6 +5,13 @@ html {
   font-family: 'Montserrat', sans-serif;
 }
 
+.lead{
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 50px;
+}
+#visa-type{
+    font-size: 15px;
+}
 a {
   display: block;
   text-decoration: none;
@@ -47,7 +54,7 @@ h2 {
 
 input {
   margin: 5% 0;
-  border: none;
+
   width: 100%;
   font-size: 1.5em;
   padding: 0 0 2%;
@@ -137,20 +144,33 @@ label {
   input[type="time"],
   select {
     margin: 5% 0;
-    border: none;
+    /*border: none;*/
     width: 100%;
     font-size: 1.5em;
     padding: 0 0 2%;
     background: none;
+    font-family: 'Montserrat', sans-serif;
   }
   
   input[type="file"],
   input[type="submit"] {
     margin: 5% auto;
     display: block;
-    font-size: 1.5em;
+    font-size: 1.1em;
   }
   
   input[type="submit"] {
     width: 50%;
   }
+
+  input{
+    border-top: black;
+    border-left: white;
+    border-right: white;
+    
+
+  }
+  h2, h3 {
+    text-align: center;
+  }
+  
