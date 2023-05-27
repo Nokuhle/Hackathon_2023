@@ -3,7 +3,7 @@ require("Database.php");
 
 // SignUp Page
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $StudentNumber = $_POST['studentnumber'];
+    $StudentNumber = $_POST['student_no'];
     $Email = $_POST['email'];
     $password = $_POST['password'];
     $conpassword = $_POST['confirmpassword'];
