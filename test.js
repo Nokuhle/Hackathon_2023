@@ -14,6 +14,11 @@ let arrayOfSteps = [
     stepTitle: "The other one",
     isCompleted: false,
   },
+  {
+    stepNumber: 4,
+    stepTitle: "Document",
+    isCompleted: false,
+  },
 ];
 
 
